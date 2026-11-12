@@ -4,7 +4,7 @@
 
 Built for the SupeRR Selector Season 2 challenge. Explore evidence-based player rankings, usual-versus-pressure performance, match timelines, sensitivity checks and a reproducible methodology report.
 
-![SupeRR Selector dashboard](docs/screenshots/dashboard.jpg)
+![SupeRR Selector dashboard](docs/screenshots/dashboard.png)
 
 ## Run in VS Code
 
