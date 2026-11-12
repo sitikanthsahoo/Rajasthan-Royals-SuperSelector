@@ -1,0 +1,9 @@
+[project]
+name = "superr-pressure-selector"
+version = "1.0.0"
+description = "Reproducible cricket pressure rankings and an offline dashboard"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.ruff]
+line-length = 120

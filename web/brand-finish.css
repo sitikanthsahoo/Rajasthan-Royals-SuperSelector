@@ -1,0 +1,60 @@
+/* Decorative vector artwork is original; inspired by the supplied RR references.
+   No graphics enter the accessibility tree or intercept controls. */
+:root{--ornament-opacity:.12;--card-ornament-opacity:.10}
+:root[data-theme=dark]{--ornament-opacity:.23;--card-ornament-opacity:.16}
+body{font-weight:450;letter-spacing:.005em;font-kerning:normal;text-rendering:optimizeLegibility}
+button,input,select{font-family:var(--font)}
+.app-shell{position:relative;isolation:isolate}
+.app-shell:before,.app-shell:after{content:'';position:absolute;pointer-events:none;z-index:-1;background-repeat:no-repeat;opacity:var(--ornament-opacity);transition:opacity var(--theme-speed) var(--ease)}
+.app-shell:before{top:75px;right:0;width:min(48%,600px);height:740px;background-image:url('assets/royal-ribbons.svg');background-size:620px 706px;background-position:80px -250px}
+.app-shell:after{bottom:70px;right:3%;width:min(75%,900px);height:225px;background:url('assets/royal-architecture.svg') center bottom/contain no-repeat}
+main>.page-heading:not(.workspace-hero){padding-block:5px 10px}
+.page-heading h1{font-weight:700;letter-spacing:-.045em;line-height:1.15}
+.page-heading p{font-size:12px;line-height:1.8;font-weight:450}
+.eyebrow{font-size:9px;font-weight:700;letter-spacing:.17em}
+.nav-link .nav-label{font-size:12px;font-weight:600;letter-spacing:-.015em}
+.breadcrumb strong{font-size:12px;font-weight:600}
+.section-heading h2{font-size:19px;letter-spacing:-.03em;font-weight:700}
+.section-heading p,.panel-head p{font-size:11px;line-height:1.75}
+.section-kicker{font-size:9px;letter-spacing:.15em;font-weight:650}
+.panel-head h2{font-size:18px;font-weight:650;letter-spacing:-.025em;line-height:1.4}
+.btn,.segment{font-size:11px;font-weight:650;letter-spacing:-.01em}
+.field-label{font-size:10px}
+select,input[type=search]{font-size:11px}
+.numeric,.stat-value,.score-big,.identity-rating strong,.comparison-cell strong,.situation-card>strong{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:'tnum' 1}
+.stat-value{font-weight:700;letter-spacing:-.045em}
+.stat-top{font-size:10px;font-weight:600}
+.stat-detail{font-size:9px;line-height:1.7}
+.stat:after{content:'';position:absolute;pointer-events:none;right:-36px;bottom:-38px;width:105px;height:105px;background:url('assets/cricket-seam.svg') center/contain no-repeat;opacity:var(--card-ornament-opacity)}
+.stat>*{position:relative;z-index:1}
+.rank-table th{font-size:9px;letter-spacing:.04em}
+.player-name{font-size:12px;font-weight:650;letter-spacing:-.015em}
+.player-sub{font-size:9px}
+.rank-table td{font-size:12px}
+.reason-item{font-size:11px;line-height:1.85}
+.muted-note,.sample-disclaimer{font-size:10px;line-height:1.8}
+.identity-card{position:relative;isolation:isolate;overflow:hidden}
+.identity-card:before{content:'';position:absolute;right:-90px;top:-330px;width:640px;height:730px;background:url('assets/royal-ribbons.svg') center/contain no-repeat;opacity:var(--card-ornament-opacity);z-index:-1;pointer-events:none}
+.identity-card:after{content:'';position:absolute;right:-25px;bottom:-32px;width:160px;height:160px;background:url('assets/cricket-seam.svg') center/contain no-repeat;opacity:var(--card-ornament-opacity);z-index:-1;pointer-events:none}
+.identity-main h1{font-size:clamp(27px,2.35vw,37px);font-weight:650;letter-spacing:-.045em;line-height:1.2}
+.identity-tags .tag{font-size:9px;font-weight:550;padding:5px 8px}
+.identity-facts span{font-size:9px;font-weight:650;letter-spacing:.09em}
+.identity-facts strong{font-size:14px;font-weight:600;letter-spacing:-.015em}
+.identity-facts small{font-size:11px;line-height:1.75}
+.identity-rating strong{font-weight:700;letter-spacing:-.05em;font-size:50px}
+.identity-rating>span{font-size:9px;font-weight:650;letter-spacing:.1em}
+.profile-source,.team-history{font-size:11px;line-height:1.7}
+.situation-card h3{font-size:12px;font-weight:650;letter-spacing:-.015em}
+.situation-card>span,.situation-card p{font-size:10px}
+.recent-opponent{font-size:10px;line-height:1.7}
+.spotlight h2{font-weight:650;letter-spacing:-.035em}
+.spotlight:before{content:'';position:absolute;pointer-events:none;right:-70px;top:-130px;width:290px;height:350px;background:url('assets/royal-ribbons.svg') center/contain no-repeat;opacity:.15;z-index:-1}
+.workspace-hero h1{font-weight:750;letter-spacing:-.045em}
+.workspace-hero:before{content:'';position:absolute;right:20%;bottom:-30px;width:380px;height:120px;background:url('assets/royal-architecture.svg') center/contain no-repeat;opacity:var(--card-ornament-opacity);z-index:-1;pointer-events:none}
+.report-body{font-weight:400}.report-body h1,.report-body h2{font-weight:700;letter-spacing:-.035em}
+@media(max-width:1250px){.identity-facts strong{font-size:13px}.identity-facts small{font-size:10px}.identity-main h1{font-size:29px}.rank-table td{font-size:11px}.player-name{font-size:11px}.section-heading p,.panel-head p{font-size:10px}.btn,.segment,select,input[type=search]{font-size:10px}.stat-value{font-size:28px}.stat-top{font-size:9px}.stat-detail{font-size:8px}.panel-head h2{font-size:17px}.profile-source,.team-history{font-size:10px}}
+@media(max-width:1020px){.app-shell:before{width:65%;background-position:40px -160px;background-size:500px auto}.identity-card:before{right:-230px;opacity:.12}}
+@media(max-width:760px){.section-heading h2{font-size:18px}.panel-head h2{font-size:16px}.page-heading p{font-size:11px}.identity-rating strong{font-size:36px}.stat-value{font-size:29px}.player-name{font-size:11px}.app-shell:after{width:90%;height:140px;bottom:70px}.workspace-hero:before{display:none}}
+@media(max-width:540px){.app-shell:before{top:50px;width:100%;height:330px;background-size:350px auto;background-position:110px -130px;opacity:.16}.page-heading h1{font-size:30px}.page-heading .eyebrow{font-size:8px}.identity-main h1{font-size:28px}.identity-facts strong{font-size:13px}.identity-facts small{font-size:10px}.identity-tags .tag{font-size:8px}.identity-card:before{top:-160px;right:-260px;opacity:.10}.identity-card:after{width:125px;height:125px;opacity:.10}.stat-top{font-size:9px}.stat-detail{font-size:8px}.stat:after{width:75px;height:75px;right:-25px;bottom:-24px}.reason-item{font-size:10px}.sample-disclaimer{font-size:10px}.rank-table th{font-size:8px}.rank-table td{font-size:10px}.player-name{font-size:10px}.player-sub{font-size:8px}.availability-flag{font-size:8px}.recent-opponent{font-size:10px}.identity-rating strong{font-size:36px}.profile-source{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.app-shell:before,.app-shell:after{transition:none}}
+@media print{.app-shell:before,.app-shell:after,.identity-card:before,.identity-card:after,.stat:after,.workspace-hero:before,.spotlight:before{display:none}}

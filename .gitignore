@@ -1,0 +1,14 @@
+# Competition source data stays local unless redistribution is authorised.
+data/raw/*
+!data/raw/.gitkeep
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+tmp/

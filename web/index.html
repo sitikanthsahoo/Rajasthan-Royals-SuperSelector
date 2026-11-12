@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151542">
+  <meta name="description" content="SupeRR Selector: a Rajasthan Royals-inspired workspace for evidence-led player selection.">
+  <title>SupeRR Selector — Selection workspace</title>
+  <script src="theme.js"></script>
+  <link rel="icon" href="assets/rr-favicon.ico?v=rr2" sizes="any"><link rel="icon" href="assets/rr-favicon-32.png?v=rr2" type="image/png" sizes="32x32"><link rel="icon" href="assets/rr-favicon-16.png?v=rr2" type="image/png" sizes="16x16">
+  <link rel="preload" href="assets/fonts/Montserrat-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="royals.css">
+  <link rel="stylesheet" href="player-lab.css"><script src="player-lab.js" defer></script><script src="scenario-engine.js?v=1" defer></script><script src="intelligence.js?v=1" defer></script><script src="app.js?v=2" defer></script>
+<link rel="stylesheet" href="brand-finish.css?v=2"><link rel="stylesheet" href="floating-nav.css?v=3"><link rel="stylesheet" href="intelligence.css?v=1"></head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Display treatment for the supplied, opaque checkerboard logo. Source stays intact. -->
+  <svg class="filter-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><defs><filter id="crest-white" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  1.4 -1.4 0 0 -0.02"/></filter></defs></svg>
+  <div class="navigation-dock">
+    <nav aria-label="Main navigation">
+      <button class="nav-link active" data-page="rankings" aria-label="Rankings" title="Rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V11h4v8M10 19V5h4v14M16 19v-5h4v5M3 19h18"/></svg><span class="nav-label">Rankings</span><span class="nav-number">01</span></button>
+      <button class="nav-link" data-page="players" aria-label="Player lab" title="Player lab"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2M4 4H2v5m18-5h2v5"/></svg><span class="nav-label">Player lab</span><span class="nav-number">02</span></button>
+      <button class="nav-link" data-page="simulator" aria-label="Simulator" title="Scenario lab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6l-6 10a1.4 1.4 0 0 0 1.3 2h13.4a1.4 1.4 0 0 0 1.3-2L14 9V3M7 15h10"/><circle cx="12" cy="17" r=".7"/></svg><span class="nav-label">Simulator</span></button>
+      <button class="nav-link has-short" data-page="matches" aria-label="Match explorer" title="Match explorer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16h4l3-9 4 13 3-9h4M3 3v18h18"/></svg><span class="nav-label">Match explorer</span><span class="nav-short" aria-hidden="true">Matches</span></button>
+      <button class="nav-link has-short" data-page="methodology" aria-label="Methodology" title="Methodology"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10l3 3v15H4V3h3m2 5h6m-6 4h7m-7 4h7"/></svg><span class="nav-label">Methodology</span><span class="nav-short" aria-hidden="true">Method</span></button>
+    </nav>
+    </div>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#rankings" aria-label="SupeRR Selector home"><img class="brand-crest" src="assets/png-transparent-rajasthan-royals-logo-pink-sports-cricket-teams-thumbnail.png" alt="Rajasthan Royals crest" width="54" height="85"><span class="brand-wordmark">Supe<span>RR</span><span class="brand-small">SELECTOR</span><span class="brand-season">SEASON 02</span></span></a>
+      <div class="breadcrumb"><span class="breadcrumb-workspace">SELECTION WORKSPACE</span><strong id="breadcrumb">Rankings</strong></div><div class="topbar-tools"><span class="dataset-badge"><span class="live-dot"></span><span id="date-range">Loading dataset</span></span><span class="tool-divider"></span><button type="button" class="theme-toggle" id="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode"><svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span class="theme-label">Dark mode</span><span class="theme-switch"><span></span></span></button></div>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading-state"><div class="spinner"></div><div class="eyebrow">SUPERR SELECTOR</div><h1>Preparing the selection room.</h1><p>Loading player rankings and match evidence…</p></div></main>
+    <footer><span class="footer-motto">HALLA BOL.</span><span class="footer-coverage"><span id="sidebar-coverage">IPL + T20I</span> · 2022–2026</span><span>Independent selection research · Built from the supplied data</span><a href="#methodology">Methodology & data notes <span aria-hidden="true">↗</span></a><a href="data/PROJECT_GUIDE.pdf" download>Project guide PDF ↓</a></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
