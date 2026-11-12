@@ -6,6 +6,10 @@ Built for the SupeRR Selector Season 2 challenge. Explore evidence-based player 
 
 ![SupeRR Selector dashboard](docs/screenshots/dashboard.png)
 
+## Deployed Webpage
+
+https://superr-selector-eight.vercel.app/#rankings
+
 ## Run in VS Code
 
 1. Open this `RR` folder in VS Code: **File → Open Folder**.
