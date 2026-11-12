@@ -113,23 +113,6 @@ RR/
 3. Enter the same two ordered lists into the Unstop dropdowns. The challenge requires those selections plus the report; a dashboard URL alone is not the submission.
 4. Keep the scoring definition and sample-size limitations visible in your explanation.
 
-## Put it on GitHub
-
-Raw CSVs are deliberately ignored to avoid accidentally redistributing competition data. Generated dashboard evidence is tracked; review whether the competition permits sharing derived results before making the repository public. No data licence is assumed. To share code only, additionally ignore `web/data/` and `reports/` and provide instructions to rebuild from authorised inputs.
-
-Create an empty repository on GitHub, then run in this folder (replace the example URL with your repository):
-
-```powershell
-git init
-git add .
-git commit -m "Build SupeRR pressure selector dashboard and analysis"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/superr-pressure-selector.git
-git push -u origin main
-```
-
-This project has not been pushed automatically. No GitHub credentials are stored. The `web/` directory is a static dashboard and can be hosted separately if data sharing is permitted; `app.py` is the local development launcher.
-
 ## Model summary
 
 Pressure is calculated **before** the current delivery. Death overs, previous wicket losses, wicket clusters and knockout stage add pressure points. Candidates require 60 pressure balls, 60 ordinary balls and 8 pressure matches with 6+ balls each. Context-adjusted impact combines scoring/run prevention (65%) and survival/wicket taking (35%). The final relative rating combines pressure performance (50%), baseline uplift (30%) and repeatability (20%), with shrinkage and eligibility safeguards.
